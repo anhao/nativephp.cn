@@ -1,50 +1,66 @@
 # 介绍
 
-## 环境要求
+## 你好，NativePHP！
 
-1. PHP 8.1+
-2. Laravel 10 or higher
-3. Node 20+
-4. Windows 10+ / macOS 12+ / Linux
+NativePHP 是一个全新的框架，可快速使用 PHP 构建丰富、原生桌面应用程序。如果你已经是 PHP 开发人员，你会觉得非常亲切。如果你是 PHP 新手，我们认为你会发现 NativePHP 容易上手且易于使用。无论你的经验如何，我们相信你会很快提高生产力。
 
-### PHP＆Node
+NativePHP 正在以强劲之势席卷全球，使 PHP 开发人员能够利用他们已经熟悉的工具和技术（HTML、CSS、Javascript 和 PHP）创建真正跨平台、原生应用。
 
-对于 NativePHP 来说，最佳的开发体验就是直接在开发机上运行 PHP 和 Node。
+他们说 PHP 已经过时了。
 
-如果你使用的是 Mac 或 Windows，获得 PHP 和 Node 运行在系统上最简便的方法是使用 [Laravel Herd](https://herd.laravel.com)。它又快又免费！
+### NativePHP 究竟是什么？
 
-请注意，尽管可以从虚拟化环境或容器中开发和运行应用程序，但可能会遇到更多意外问题，并需要更多手动步骤以创建可用构建。
+严格来说，NativePHP 是各种元素的组合：
 
-### Laravel
+1. 一组易于使用的类 - 抽象层 - 使你能够与各种主机操作系统功能进行交互。
+2. 一套工具，可使用 Electron 或 Tauri 浏览器环境构建和打包你的原生应用程序。
+3. 静态 PHP 运行时，使你的应用程序能够在任何用户系统上运行，而无需他们做任何努力。
 
-NativePHP 是专为与 Laravel 最佳配合而构建的。您可以将其安装到现有的 Laravel 应用程序中，或者[启动一个新的应用程序](https://laravel.com/docs/10.x/installation)。
+### NativePHP 不是什么
 
-### 安装 NativePHP 运行时
+NativePHP 并不是一种特别主张的构建原生应用程序的方式。目前我们仅支持 Laravel 驱动程序，但我们已经在努力让它适用于无论你使用哪种框架的情况，甚至即使你根本不使用框架。
 
-```bash
-composer require nativephp/electron
-```
+NativePHP 不是 GUI 框架。我们不想告诉你如何构建你的应用程序。你可以选择任何让你和你的团队感觉最高效的 UI 工具集。
 
-Tauri 运行时即将推出。
+构建 React 前端？没问题。Vue？当然可以。Livewire 或 Inertia？都可以！纯粹的 HTML 和 CSS？没问题。Tailwind？Bootstrap？Material UI？任你选择。
 
-### 运行 NativePHP 安装程序
+NativePHP 也不是 PHP 的新定制分支。这就是你了解和喜好的新 PHP。
 
-```bash
-php artisan native:install
-```
+### 包含哪些功能？
 
-NativePHP 安装程序会负责发布 NativePHP 服务提供程序，该提供程序为您的应用程序与正在使用的运行时（Electron 或 Tauri）打造所需的依赖关系。它还会发布 NativePHP 配置文件至`config/nativephp.php`。
+NativePHP 开箱即用，拥有许多有用的功能，包括：
 
-最后，它会安装您正在使用的特定运行时所需的其他任何依赖项，例如，对于Electron，它会安装 NPM 依赖项。
+* 窗口管理
+* 菜单管理
+* 文件管理
+* 数据库支持（SQLite）
+* 原生通知
 
-**每当您在新机器上或在 CI 中设置 NativePHP 时，应运行安装程序，确保所有必要的依赖项都已准备就绪以构建您的应用程序。**
+所有这些以及更多功能都在这些文档的其余部分中探讨。
 
-### 启动开发服务器
+### 使用 NativePHP 可以构建什么？
 
-```bash
-php artisan native:serve
-```
+说实话，任何你想要的。我们相信 NativePHP 将使成千上万的开发人员能够构建各种应用程序。想象力是唯一的限制。
 
-这会为本地测试启动您的应用程序的开发版本。
+你可以构建一个菜单栏应用程序，让你管理你的定时任务，或者一个酷炫的新启动器应用程序，或者一个屏幕录像程序，可以给看到的每个笑脸表情加上牛仔帽。
 
-就是这样！您现在应该在本机窗口中看到您的 Laravel 应用程序正在运行。
+（你绝对应该构建最后一个。）
+
+### 下一步是什么？
+
+去阅读文档吧！我们已尽可能地使它们全面，但如果你发现遗漏了什么，请随时[贡献](https://github.com/nativephp/nativephp.com)。
+
+此站点和所有 NativePHP 存储库都是开源的，可在 [GitHub](https://github.com/nativephp) 上获取。
+
+准备好了吗？让我们开始吧。
+
+### 鸣谢
+
+NativePHP 感谢以下项目以及所有贡献者的辛勤工作：
+
+* [PHP](https://php.net)
+* [Electron](https://electronjs.org)
+* [Tauri](https://tauri.app)
+* [Laravel](https://laravel.com)
+* [Symfony](https://symfony.com)
+* [Static PHP CLI](https://github.com/crazywhalecc/static-php-cli/)
